@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Halaman Utama</title>
-        <link rel="stylesheet" href="/style.css"/>
+        <link rel="stylesheet" href="/static/style.css"/>
         
     </head>
     <body>
@@ -13,13 +13,25 @@
             <div class="nav-column">
                 <nav>
                     <ul>
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Input Data</a></li>
-                        <li><a href="#">Cari Data</a></li>
+                        <li><a href="{{ url_for('index') }}">Beranda</a></li>
+                        <li><a href="{{ url_for('input_data') }}">Input Data</a></li>
+                        <li><a href="{{ url_for('cari_data') }}">Cari Data</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-       
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col1">
+                        <h1>HealthTrack</h1>
+                        <p>Aplikasi ini memungkinkan perekaman dan penyimpanan informasi pribadi pasien, termasuk riwayat penyakit, alergi, obat-obatan yang digunakan, dan data demografis.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{{ url_for('static', filename='gambar1.png') }}" alt="">    
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
