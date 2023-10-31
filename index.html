@@ -20,10 +20,48 @@
                 </nav>
             </div>
         </header>
-          <div class="card">
+        <div class="card" id="card1">
             <div class="card-body">
+                <div class="form-container">
                     <h2>Form Input Data Pasien</h2>
-                    <p>Aplikasi ini memungkinkan perekaman dan penyimpanan informasi pribadi pasien, termasuk riwayat penyakit, alergi, obat-obatan yang digunakan, dan data demografis.</p>
+                    <form action="proses_data.php" method="post">
+                        <div class="form-group">
+                            <label for="ktp">Nomor KTP:</label>
+                            <input type="text" id="ktp" name="ktp" placeholder="Masukkan Nomor KTP">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pasien">Nama Pasien:</label>
+                            <input type="text" id="pasien" name="pasien" placeholder="Masukkan Nama Pasien">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pasien">Tanggal Lahir Pasien:</label>
+                            <input type="date" id="lahir" name="lahir" placeholder="Masukkan Tanggal Lahir Pasien">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kelamin">Jenis Kelamin:</label>
+                            <select id="kelamin" name="kelamin">
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="alamat">Alamat Pasien:</label>
+                            <input type="text" id="alamat" name="alamat" placeholder="Masukkan Alamat Pasien">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kontak">Kontak Pasien:</label>
+                            <input type="text" id="kontak" name="kontak" placeholder="Masukkan Kontak Pasien">
+                        </div>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
         </div>
     </body>
