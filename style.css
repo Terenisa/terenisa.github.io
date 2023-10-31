@@ -52,3 +52,13 @@ header {
 .card-body {
     padding: 10px;
 }
+.row {
+    margin-top: 50px;
+    display: flex; /* Menggunakan flexbox untuk mengatur kolom */
+    list-style: none;
+}
+
+.col {
+    flex: 1; /* Masing-masing kolom mengambil setengah lebar */
+    padding: 0px 20px 0px 20px; /* Menambahkan padding untuk tata letak yang lebih baik */
+}
