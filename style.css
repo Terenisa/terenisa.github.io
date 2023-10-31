@@ -14,7 +14,8 @@ header {
     display: flex; 
     margin-left: 45px;
     margin-right: 45px;
-    color: #000; 
+    color: #fff; 
+    background-color: #004346;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 30px;
 }
