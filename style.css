@@ -1,3 +1,7 @@
+git add style.css
+git commit -m "Menambahkan file style.css"
+git push origin master
+
 body{
     margin: 0;
     padding: 0;
