@@ -1,22 +1,37 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Hallo Tesa</title>
-  </head>
-  <body>
-    <nav>
-    <div>
-      <h1>Hello World</h1>
-      <h4>My name is Teresa Puji Astuti</h4>
-      <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Halaman Utama</title>
+        <link rel="stylesheet" href="/static/style.css"/>
+        
+    </head>
+    <body>
+        <header>
+            <div class="title-column">
+                <h1>HealthTrack</h1>
+            </div>
+            <div class="nav-column">
+                <nav>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Input Data</a></li>
+                        <li><a href="#">Cari Data</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col1">
+                        <h1>HealthTrack</h1>
+                        <p>Aplikasi ini memungkinkan perekaman dan penyimpanan informasi pribadi pasien, termasuk riwayat penyakit, alergi, obat-obatan yang digunakan, dan data demografis.</p>
+                    </div>
+                    <div class="col">
+                        <img src="{{ url_for('static', filename='gambar1.png') }}" alt="">    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
