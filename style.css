@@ -7,7 +7,7 @@ git push origin main
 body{
     margin: 0;
     padding: 0;
-    
+    background-color: #003049;
 }
 
 /* Gaya untuk header */
@@ -30,7 +30,6 @@ header {
     float: right; 
     margin-top: 15px; 
     margin-right: 30px;
-    background-color: #003049;
 }
 
 .nav-column ul li {
