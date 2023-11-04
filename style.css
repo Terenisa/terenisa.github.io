@@ -1,3 +1,7 @@
+git add styles.css
+git commit -m "Add styles.css"
+git push origin main
+
 body{
     margin: 0;
     padding: 0;
