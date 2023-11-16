@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Latihan 5</title>
+  </head>
+  <body>
+    <form action="formulir.html" method="get">
+       Nama: <input type="text" name="nama" value="Nama Kamu"/>
+       <br/>
+       Password: <input type="password" name="password"/>
+       <br/>
+       Jenis Kelamin : <input type="radio" name="gender_laki" value="laki-Laki" checked/>Laki-Laki
+                       <input type="radio" name="gender_wanita" value="perempuan"/> Perempuan
+      <br/> 
+      Hobi : <input type="checkbox" name="hobi_baca"/> Membaca Buku
+              <input type="checkbox" name="hobi_tulis"/> Menulis Buku
+              <input type="checkbox" name="hobi_mancing"/> Memancing
+      <br/>
+      Asal Kota :
+      <select name="asal_kota">
+        <option value="Kota Jakarta">Jakarta</option>
+        <option>Bandung</option>
+        <option value="Kota Semarang" selected>Semarang</option>
+      </select>
+      <br/>
+      Komentar Anda :
+       <textarea rows="5" cols="20">
+          Tulis disini
+       </textarea>
+       <br/>
+       <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
