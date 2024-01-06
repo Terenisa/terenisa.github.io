@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>TRAVELIA</title>
+    <style>
+        body.home-bg {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: black;
+        }
+        .logo img {
+            max-width: 35%;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+            font-family: arial;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 13px;
+        }
+          .main-card {
+            overflow: hidden;
+            margin: 15px;
+            display: flex;
+          }
+      
+          /* Styling untuk card di dalamnya */
+          .sub-card {
+            padding: 10px;
+            flex: 1; 
+          }
+      
+          /* Header card di dalamnya */
+          .sub-card .card-header {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            width: 80px;
+          }
+      
+          /* Isi card di dalamnya */
+          .sub-card .card-content {
+            padding: 20px;
+          }
+      
+          /* Footer card di dalamnya */
+          .sub-card .card-footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+          }
+          h2{
+            color: #fff;
+          }
+          .main{
+            background-color: #fff;
+            width: 50%;
+            float: right;
+            padding: 20px;
+          }
+          .gambar{
+            background-color: red;
+            height: 200px;
+          }
+          img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+          }
+    </style>
+</head>
+<body class="home-bg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gambar">
+        <img src="assets/bromo.jpg" alt="Kitten Image">
+    </div>
+    <div class="main">
+        <div class="main-card">
+            <div class="sub-card">
+              <div class="card-header">
+                <h2>SD</h2>
+              </div>
+            </div>
+        
+            <div class="sub-card">
+              <div class="card-header">
+                <h2>SMP</h2>
+              </div>
+            </div>
+        
+            <div class="sub-card">
+              <div class="card-header">
+                <h2>SMA</h2>
+              </div>
+            </div>
+        
+            <div class="sub-card">
+              <div class="card-header">
+                <h2>S1</h2>
+              </div>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+</body>
+</html>
