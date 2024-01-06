@@ -1,0 +1,125 @@
+<!-- Tugas Praktikum 1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai Angka ke Huruf</title>
+    <script>
+        function konversiNilai() {
+            // Mendapatkan nilai dari input
+            var nilaiAngka = document.getElementById('inputNilai').value;
+
+            // Mengkonversi nilai angka ke huruf
+            var nilaiHuruf;
+
+            if (nilaiAngka >= 0 && nilaiAngka <= 40) {
+                nilaiHuruf = 'E';
+            } else if (nilaiAngka <= 55) {
+                nilaiHuruf = 'D';
+            } else if (nilaiAngka <= 60) {
+                nilaiHuruf = 'C';
+            } else if (nilaiAngka <= 65) {
+                nilaiHuruf = 'BC';
+            } else if (nilaiAngka <= 70) {
+                nilaiHuruf = 'B';
+            } else if (nilaiAngka <= 80) {
+                nilaiHuruf = 'AB';
+            } else if (nilaiAngka <= 100) {
+                nilaiHuruf = 'A';
+            } else {
+                nilaiHuruf = 'Nilai tidak valid';
+            }
+
+            // Menampilkan hasil konversi
+            document.getElementById('hasilKonversi').innerHTML = 'Nilai Huruf: ' + nilaiHuruf;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Konversi Nilai Angka ke Huruf</h2>
+    <label for="inputNilai">Masukkan Nilai Angka:</label>
+    <input type="number" id="inputNilai" placeholder="Masukkan nilai angka">
+    <button onclick="konversiNilai()">Konversi</button>
+    <p id="hasilKonversi"></p>
+</body>
+
+</html>
+
+<!-- Tugas Praktikum 2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function hitung() {
+            // Mendapatkan nilai dari input
+            var bilangan1 = parseFloat(document.getElementById('bilangan1').value);
+            var bilangan2 = parseFloat(document.getElementById('bilangan2').value);
+
+            // Memilih operasi berdasarkan tombol yang ditekan
+            var operasi = document.querySelector('input[name="operasi"]:checked').value;
+
+            // Melakukan perhitungan
+            var hasil;
+
+            switch (operasi) {
+                case 'tambah':
+                    hasil = bilangan1 + bilangan2;
+                    break;
+                case 'kurang':
+                    hasil = bilangan1 - bilangan2;
+                    break;
+                case 'kali':
+                    hasil = bilangan1 * bilangan2;
+                    break;
+                case 'bagi':
+                    hasil = bilangan1 / bilangan2;
+                    break;
+                default:
+                    hasil = 'Operasi tidak valid';
+            }
+
+            // Menampilkan hasil
+            document.getElementById('hasil').value = hasil;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <label for="bilangan1">Bilangan 1:</label>
+    <input type="text" id="bilangan1" placeholder="Masukkan bilangan pertama">
+
+    <label for="bilangan2">Bilangan 2:</label>
+    <input type="text" id="bilangan2" placeholder="Masukkan bilangan kedua">
+
+    <br>
+
+    <input type="radio" name="operasi" value="tambah"> +
+    <input type="radio" name="operasi" value="kurang"> -
+    <input type="radio" name="operasi" value="kali"> *
+    <input type="radio" name="operasi" value="bagi"> /
+
+    <br>
+
+    <button onclick="hitung()">Hitung</button>
+
+    <br>
+
+    <label for="hasil">Hasil:</label>
+    <input type="text" id="hasil" readonly>
+
+    <SCRIPT LANGUAGE="JavaScript">
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+    </SCRIPT>
+</body>
+
+</html>
